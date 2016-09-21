@@ -1,0 +1,117 @@
+
+/* ============= ELEMENT STYLES ============== */
+
+body {
+  background-color: #e0e0e0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background-color: #e0e0e0;
+}
+
+
+/* ================ NAV STYLES =============== */
+
+.main-header,
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.main-header {
+  padding-top: .3em;
+  position: flex;
+}
+.name {
+  font-size: 2em;
+  font
+}
+
+.nav {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav a {
+  display: block;
+  margin: 4px;
+  color: #444;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 900;
+  padding: .85em 7em;
+  background-color: #f9f9f9;
+}
+
+/* =============== HEADER STYLES ==============*/
+
+.profile-image {
+  width: 70%;
+}
+
+.about p {
+  font-weight: 300;
+}
+/* =============== PORTFOLIO STYLES ==============*/
+
+.portfolio {
+  background-color: #f9f9f9;
+}
+
+.portfolio-title {
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-top: 50px;
+}
+
+.portfolio h1 {
+  font-size: 1.5em;
+}
+
+.portfolio p {
+  padding-bottom: 2em;
+  font-weight: 100;
+}
+
+img {
+  width: 90%;
+}
+
+/* =============== FOOTER STYLES ==============*/
+.main-footer {
+  border-top: 1px solid black;
+}
+
+.main-footer h1 {
+  float: left;
+  margin-top: 5px;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.main-footer h3 {
+  float: right;
+  margin-top: 5px;
+  font-size: .85em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* =============== MEDIA QUERIES =============== */
+@media (min-width: 768px) {
+  .main-header {
+    background-color: red;
+  }
+
+  .portfolio img:nth-child(3n+1) {
+    clear: left;
+  }
+}

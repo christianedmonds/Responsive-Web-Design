@@ -38,7 +38,6 @@ header {
 
 .nav {
   margin-top: 20px;
-  list-style: none;
   padding-left: 0;
 }
 
@@ -48,12 +47,13 @@ header {
   padding: .85em 7em;
   color: #444;
   background-color: #f9f9f9;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 1.25em;
   font-weight: 600;
 }
+
 
 /* =============== HEADER STYLES ==============*/
 
@@ -119,6 +119,7 @@ img {
 
 .main-footer h3 {
   float: right;
+  color: #444;
   margin-top: 5px;
   font-size: .85em;
   font-weight: 900;
@@ -137,9 +138,15 @@ img {
   margin: 10px;
 }
 
+.footer-large {
+  display: none;
+}
+
 /* =============== TABLET QUERIES =============== */
 
 @media (min-width: 768px) {
+  /* ================ NAV STYLES =============== */
+
   .main-header {
     height: 200px;
     justify-content: flex-end;
@@ -160,6 +167,8 @@ img {
     padding: 10px 15px;
   }
 
+  /* =============== HEADER STYLES ==============*/
+
   .header-2 {
     height: 200px;
     margin-bottom: 10px;
@@ -179,6 +188,8 @@ img {
     text-align: left;
   }
 
+  /* =============== PORTFOLIO STYLES ==============*/
+
   .portfolio {
     margin-top: 0px;
   }
@@ -192,6 +203,58 @@ img {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+/* =============== LARGE FOOTER STYLES ==============*/
+
+  .footer-details {
+    display: none;
+  }
+
+  .footer-large,
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-large {
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  .footer-name {
+    align-self: center;
+    margin-right: auto;
+    padding-left: 30px;
+  }
+
+  .footer-name a {
+    color: #444;
+    font-size: 1.25em;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .footer-nav {
+    margin-top: 20px;
+    list-style: none;
+    padding-right: 0;
+    align-self: center;
+  }
+
+  .footer-nav a {
+    display: block;
+    margin: 4px;
+    padding: .85em;
+    color: #444;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 600;
+  }
+
 }
 
 /* =============== DESKTOP QUERIES =============== */

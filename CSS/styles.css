@@ -260,7 +260,7 @@ img {
 
 /* =============== DESKTOP QUERIES =============== */
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .main-header {
     flex-direction: row;
   }
